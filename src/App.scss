@@ -1,0 +1,39 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Neucha', cursive;
+  --white: #fff;
+  --primary-color: #2f74c0;
+  --primary-color-tinted: #5b9ee0;
+  --primary-color-shaded: #003c8f;
+
+  --transparent-black: rgba(0, 0, 0, 0.5);
+  --transition: all 0.2s ease-in-out;
+}
+
+.App {
+  max-width: 90vw;
+  min-height: 90vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 30px auto;
+  color: var(--white);
+  text-align: center;
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    margin: 15px auto;
+    font-size: 35px;
+  }
+}
+
